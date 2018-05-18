@@ -1,0 +1,91 @@
+//Home page button
+#abtBtn{
+
+	.btn{
+	margin: 50px;
+	background-color: $secondary-color!important;
+	border-color: $secondary-color;
+	padding: 15px 45px 15px 45px;
+		a{
+			color: white;
+			font-size: 2.5em;
+			font-weight: 900;
+			letter-spacing: 4px;
+			font-family: $secondary-font;
+			text-decoration: none;
+		}
+	}
+
+	.btn:hover{
+		background-color: $primary-color;
+
+		a{
+			color: black;
+			text-decoration: none;
+		}
+	}
+
+	.btn:visited{
+		border-color: $primary-color;
+	}
+}
+
+//About Button
+#typeBtn{
+	button{
+		margin: 50px;
+		background-color: $secondary-color;
+		border-color: $secondary-color;
+		padding: 15px 45px 15px 45px;
+		a{
+			color: black;
+			font-size: 2em;
+			font-weight: 800;
+			font-family: 'lato';
+			text-decoration: none;
+		}
+	}
+
+	.btn:hover{
+		background-color: $secondary-color;
+
+		a{
+			color: black;
+			text-decoration: none;
+		}
+	}
+
+	.btn:visited{
+		border-color: $primary-color;
+	}
+}
+
+//Referral Button
+#referralBtn{
+	button{
+		margin: 50px;
+		background-color: $secondary-color;
+		border-color: $secondary-color;
+		padding: 15px 45px 15px 45px;
+		a{
+			color: black;
+			font-size: 2em;
+			font-weight: 800;
+			font-family: 'lato';
+			text-decoration: none;
+		}
+	}
+
+	.btn:hover{
+		background-color: $secondary-color;
+
+		a{
+			color: black;
+			text-decoration: none;
+		}
+	}
+
+	.btn:visited{
+		border-color: $primary-color;
+	}
+}

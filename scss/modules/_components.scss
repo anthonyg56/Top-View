@@ -1,0 +1,26 @@
+//Forms
+#formTitle{
+	padding-top: 30px;
+	padding-left: 30px;
+	h2{
+		color: $primary-color; 
+		font-weight: 800; 
+		font-family: 'lato'; 
+		font-size: 3em;
+	}
+
+	
+}
+
+#form{
+	background-color: white;
+	border-radius: 25px;
+	margin-top: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 50px;
+	form{
+		padding: 15px 0 15px 0;
+		width: 75%
+	}
+}

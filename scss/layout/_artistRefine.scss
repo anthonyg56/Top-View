@@ -1,0 +1,151 @@
+#wallpaper {
+    /*
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	top: 0;
+ 	background: url("../img/covers/cover30.jpg") no-repeat 50% 50%;
+  	display: table;
+	background-size: cover;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+    #art {
+        padding: 150px 0 0 0;
+		
+		#iconHeader{
+			margin: 30px auto;
+		}
+        #aTitle {
+            margin: 50px auto;
+
+            h1 {
+                color: white;
+                font-family: $main-font;
+                font-size: 9em;
+                font-weight: 600;
+                letter-spacing: 10px
+            }
+        }
+
+        #aContent {
+
+            #boxSection {
+                box-shadow: -20px 0 15px rgba(0, 0, 0, .2);
+
+                .row {
+	                    .boxes {
+	                        height: 250px;
+	                        padding: 0;
+	                        margin: 0;
+	                        /*border: 2px solid $primary-color;*/
+	                        h3 {
+	                            color: white;
+	                            font-family: $secondary-font;
+	                            letter-spacing: 10px;
+	                            font-size: 3em;
+	                            font-weight: 900;
+	                            margin: 0!important;
+	                            padding: 100px 0;
+	                            transition: .75s;
+	                        }
+
+	                        h3:hover {
+	                            color: $secondary-color;
+	                        }
+
+	                        a {
+	                            text-decoration: none;
+	                        }
+
+	                        .highlight{
+	                        	transition: .75s;
+	                        }
+	                        .highlight:hover {
+	                            background-color: rgba(0, 0, 0, 0.2);
+	                            border: 1px solid white;
+	                            padding: 0;
+	                        	margin: 0;
+	                        }
+	                    }
+
+	                    #box1 {
+	                        
+	                        background-image: url('../img/covers/topViewCover3.jpg');
+	                        background-size: cover;
+	                        background-position: center;
+	                        
+	                    }
+						
+	                    #box2 {
+	                        background-image: url('../img/covers/topViewCover8.jpg');
+	                        background-size: cover;
+	                        background-position: center;
+	                        animation-delay: .15s;
+	                    }
+
+	                    #box3 {
+	                        background-image: url('../img/covers/topViewCover6.jpg');
+	                        background-size: cover;
+	                        background-position: center;
+	                        animation-delay: .35s;
+	                    }
+
+	                    #box4 {
+	                        background-image: url('../img/covers/topViewCover7.jpg');
+	                        background-size: cover;
+	                        background-position: center;
+	                        animation-delay: .15s;
+	                    }
+
+	                    #box5 {
+	                        background-image: url('../img/covers/topViewCover5.jpg');
+	                        background-size: cover;
+	                        background-position: center;
+	                        animation-delay: .35s;
+	                    }
+
+	                    #box6 {
+	                        background-image: url('../img/covers/topViewCover2.jpg');
+	                        background-size: cover;
+	                        background-position: center;
+	                        animation-delay: .55s;
+	                    }
+	           
+                }
+            }
+        }
+    }
+
+    #artistProfile {
+        margin: 75px auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	#wallpaper{
+	    #art {
+	    	padding-top: 99px;
+	    	padding-bottom: 0;
+	        #aTitle {
+	            h1 {
+	                color: white!important;
+	            }
+	        }
+	    }
+
+	    .boxes {
+	        h3 {
+	            color: white;
+	        }
+
+	        h3:hover {
+	        	color: $secondary-color;
+	        }
+	        h3:visited{
+	        	color: $navy;
+	        }
+	    }
+ 	}
+}

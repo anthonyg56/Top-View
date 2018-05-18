@@ -1,0 +1,136 @@
+//Nav-bar
+#head {
+    background-color: transparent;
+    padding: 10px 0 10px 0;
+    border: none;
+    margin: 0;
+    .container-fluid {
+        .page-scroll {
+            h1 {
+                font-family: $secondary-font;
+                color: white!important;
+            }
+        }
+    }
+    .navbar-header {
+        padding-top: 1px;
+        padding-right: 20px;
+
+
+
+        a:hover {
+            text-decoration: none;
+            transition: 1s;
+            color: #005fb2;
+        }
+
+        a {
+            font-family: 'Lato';
+            font-weight: 750;
+            font-size: 2em;
+            color: #FFDF00;
+        }
+    }
+
+    .navbar-collapse {
+        height: 100vh;
+        max-height: none;
+        transition: 1s;
+        .nav {
+            float: none;
+            margin: 0 auto;
+            display: table;
+            table-layout: fixed;
+            .scroll{
+            padding-top: 80px;
+            }
+            .active {
+                color: $secondary-color;
+                border-bottom: 5px solid;
+            }
+        }
+        .shrink {
+            background-color: #f4f4f4;
+
+            a {
+                color: white;
+            }
+        }
+
+        a {
+            font-family: $secondary-font;
+            font-weight: 750;
+            font-size: 3em;
+            padding-right: 25px!important;
+            padding-top: 50px;
+            color: $primary-color;
+            letter-spacing: 4px;
+        }
+
+        a:hover {
+            color: $secondary-color;
+            transition: .75s;
+        }
+
+        #navLogo {
+            padding: 0!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #head {
+        background-color: white;
+        padding: 0px 0 0 0;
+        .container {
+            .page-scroll {
+                h1 {
+                	padding-left: 8px;
+                    display: inline;
+                    color: $secondary-color;
+                    font-family: $secondary-font;
+                    letter-spacing: 5px;
+                    font-weight: 600;
+                    font-size: 3em;
+                    display: inline!important;
+                }
+            }
+        }
+        .navbar-collapse {
+            background-color: $secondary-color;
+            .navbar-nav {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 500px;
+                padding: 0!important;
+                margin: 0;
+                .scoll{
+                    padding: 0!important;
+                }
+                li {
+                    .active {
+                        color: black!important;
+                        border-bottom: none;
+                    }
+                    margin:auto;
+                    padding: 35px 0 0 35px!important;
+
+                    a {
+                        margin: auto!important;
+                        padding: auto!important;
+                        height: 0;
+                        color: white;
+                        font-size: 2.5em;
+                        font-family: $main-font;
+                    }
+                }
+                #navLogo {
+                    display: none;
+                }
+            }
+        }
+    }
+}

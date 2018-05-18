@@ -1,0 +1,672 @@
+/* line 1, ../scss/base/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1, ../scss/base/_base.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../scss/base/_base.scss */
+body {
+  background-image: linear-gradient(to right, #000080, #1e1a8a, #312e93, #42409b, #5252a3);
+  padding-top: 0;
+}
+
+/* line 2, ../scss/layout/_home.scss */
+.content {
+  margin: auto auto;
+}
+/* line 4, ../scss/layout/_home.scss */
+.content h1 {
+  color: white;
+  font-family: "Unica One";
+  font-size: 9em;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+/* line 14, ../scss/layout/_home.scss */
+.social {
+  margin-top: 100px;
+  width: 200px;
+  height: 220px;
+  position: fixed;
+  perspective: 1000px;
+  background-color: transparent;
+}
+/* line 22, ../scss/layout/_home.scss */
+.social li {
+  background-color: transparent;
+}
+/* line 24, ../scss/layout/_home.scss */
+.social li :first-child a {
+  border-radius: 25px;
+}
+/* line 28, ../scss/layout/_home.scss */
+.social li :last-child a {
+  border-radius: 25px;
+}
+/* line 33, ../scss/layout/_home.scss */
+.social li :first-child a:hover {
+  background: #3b5998!important;
+}
+/* line 38, ../scss/layout/_home.scss */
+.social li :nth-child(2) a:hover {
+  background: #00acee;
+}
+/* line 42, ../scss/layout/_home.scss */
+.social li :nth-child(3) a:hover {
+  background: #ea4c89;
+}
+/* line 46, ../scss/layout/_home.scss */
+.social li :nth-child(4) a:hover {
+  background: #dd4b39;
+}
+/* line 50, ../scss/layout/_home.scss */
+.social li a {
+  display: block;
+  height: 47px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  font: normal normal normal 16px/20px "FontAwesome", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding: 7px;
+  text-decoration: none;
+  text-align: center;
+  transition: background .5s ease .300ms;
+}
+/* line 64, ../scss/layout/_home.scss */
+.social li a span {
+  width: 100px;
+  float: left;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  margin: -25px 74px;
+  padding: 8px;
+  transform-origin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateY(45deg);
+  border-radius: 5px;
+  transition: all 0.5s ease 0.3ms;
+}
+/* line 80, ../scss/layout/_home.scss */
+.social li a span:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #222;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+/* line 95, ../scss/layout/_home.scss */
+.social li a:hover span {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateY(0);
+}
+
+/* line 1, ../scss/layout/_artistRefine.scss */
+#wallpaper {
+    /*
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	top: 0;
+ 	background: url("../img/covers/cover30.jpg") no-repeat 50% 50%;
+  	display: table;
+	background-size: cover;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+}
+/* line 14, ../scss/layout/_artistRefine.scss */
+#wallpaper #art {
+  padding: 150px 0 0 0;
+}
+/* line 17, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #iconHeader {
+  margin: 30px auto;
+}
+/* line 20, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aTitle {
+  margin: 50px auto;
+}
+/* line 23, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aTitle h1 {
+  color: white;
+  font-family: "Unica One";
+  font-size: 9em;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+/* line 34, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection {
+  box-shadow: -20px 0 15px rgba(0, 0, 0, 0.2);
+}
+/* line 38, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row .boxes {
+  height: 250px;
+  padding: 0;
+  margin: 0;
+  /*border: 2px solid $primary-color;*/
+}
+/* line 43, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row .boxes h3 {
+  color: white;
+  font-family: "Wire One";
+  letter-spacing: 10px;
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0!important;
+  padding: 100px 0;
+  transition: .75s;
+}
+/* line 54, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row .boxes h3:hover {
+  color: #00bbfa;
+}
+/* line 58, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row .boxes a {
+  text-decoration: none;
+}
+/* line 62, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row .boxes .highlight {
+  transition: .75s;
+}
+/* line 65, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row .boxes .highlight:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  padding: 0;
+  margin: 0;
+}
+/* line 73, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row #box1 {
+  background-image: url("../img/covers/topViewCover3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* line 81, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row #box2 {
+  background-image: url("../img/covers/topViewCover8.jpg");
+  background-size: cover;
+  background-position: center;
+  animation-delay: .15s;
+}
+/* line 88, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row #box3 {
+  background-image: url("../img/covers/topViewCover6.jpg");
+  background-size: cover;
+  background-position: center;
+  animation-delay: .35s;
+}
+/* line 95, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row #box4 {
+  background-image: url("../img/covers/topViewCover7.jpg");
+  background-size: cover;
+  background-position: center;
+  animation-delay: .15s;
+}
+/* line 102, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row #box5 {
+  background-image: url("../img/covers/topViewCover5.jpg");
+  background-size: cover;
+  background-position: center;
+  animation-delay: .35s;
+}
+/* line 109, ../scss/layout/_artistRefine.scss */
+#wallpaper #art #aContent #boxSection .row #box6 {
+  background-image: url("../img/covers/topViewCover2.jpg");
+  background-size: cover;
+  background-position: center;
+  animation-delay: .55s;
+}
+/* line 121, ../scss/layout/_artistRefine.scss */
+#wallpaper #artistProfile {
+  margin: 75px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 128, ../scss/layout/_artistRefine.scss */
+  #wallpaper #art {
+    padding-top: 99px;
+    padding-bottom: 0;
+  }
+  /* line 132, ../scss/layout/_artistRefine.scss */
+  #wallpaper #art #aTitle h1 {
+    color: white!important;
+  }
+  /* line 139, ../scss/layout/_artistRefine.scss */
+  #wallpaper .boxes h3 {
+    color: white;
+  }
+  /* line 143, ../scss/layout/_artistRefine.scss */
+  #wallpaper .boxes h3:hover {
+    color: #00bbfa;
+  }
+  /* line 146, ../scss/layout/_artistRefine.scss */
+  #wallpaper .boxes h3:visited {
+    color: navy;
+  }
+}
+/* line 2, ../scss/layout/_about.scss */
+.aboutTitle {
+  margin: 200px auto 50px auto;
+}
+/* line 5, ../scss/layout/_about.scss */
+.aboutTitle h1 {
+  color: white;
+  font-family: "Unica One";
+  font-size: 9em;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+/* line 18, ../scss/layout/_about.scss */
+#about_form .container {
+  transform: translate(70%, 0%);
+  width: 760px;
+  height: 650px;
+  padding: 0;
+  margin: 0;
+}
+/* line 26, ../scss/layout/_about.scss */
+#about_form .container .form_content {
+  background: rgba(0, 157, 250, 0.7);
+  padding: 40px 30px;
+  height: 645px!important;
+  color: white;
+  font-family: 'lato';
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* line 36, ../scss/layout/_about.scss */
+#about_form .container .form_content a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #00bbfa;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* line 46, ../scss/layout/_about.scss */
+#about_form .container .login_form {
+  background-color: white;
+  height: 500px!important;
+  top: 20px;
+  box-shadow: -20px 0 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+/* line 53, ../scss/layout/_about.scss */
+#about_form .container .login_form h1 {
+  color: #00bbfa;
+  font-weight: 500;
+}
+/* line 60, ../scss/layout/_about.scss */
+#about_form .container .login_form form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 2px solid #00bbfa;
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5em;
+}
+/* line 73, ../scss/layout/_about.scss */
+#about_form .container .login_form form input:hover {
+  border: 2px solid #00bbfa;
+}
+/* line 80, ../scss/layout/_about.scss */
+#about_form .container .form_content,
+#about_form .container .login_form {
+  height: 350px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 89, ../scss/layout/_about.scss */
+  .social {
+    display: none;
+  }
+
+  /* line 92, ../scss/layout/_about.scss */
+  .aboutTitle {
+    margin: 100px auto 10px auto;
+  }
+
+  /* line 96, ../scss/layout/_about.scss */
+  #about_form {
+    padding: 50px 3px 0px 3px;
+    width: auto;
+    height: auto;
+  }
+  /* line 100, ../scss/layout/_about.scss */
+  #about_form .container {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 112, ../scss/layout/_about.scss */
+  #about_form .container .login_form {
+    background-color: white;
+    height: auto!important;
+    width: 100%!important;
+    box-shadow: -20px 0 15px rgba(0, 0, 0, 0.2);
+    top: 0;
+  }
+  /* line 119, ../scss/layout/_about.scss */
+  #about_form .container .login_form h1 {
+    color: #00bbfa;
+    font-weight: 500;
+  }
+  /* line 126, ../scss/layout/_about.scss */
+  #about_form .container .login_form form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid #00bbfa;
+    border-radius: 25px;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.5em;
+  }
+  /* line 139, ../scss/layout/_about.scss */
+  #about_form .container .login_form form input:hover {
+    border: 2px solid #00bbfa;
+  }
+  /* line 146, ../scss/layout/_about.scss */
+  #about_form .container .form_content,
+  #about_form .container .login_form {
+                /*
+ 			position: relative;
+
+ 			width: 50%;*/
+    position: auto;
+    width: auto;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+  }
+}
+/* line 2, ../scss/layout/_nav.scss */
+#head {
+  background-color: transparent;
+  padding: 10px 0 10px 0;
+  border: none;
+  margin: 0;
+}
+/* line 9, ../scss/layout/_nav.scss */
+#head .container-fluid .page-scroll h1 {
+  font-family: "Wire One";
+  color: white!important;
+}
+/* line 15, ../scss/layout/_nav.scss */
+#head .navbar-header {
+  padding-top: 1px;
+  padding-right: 20px;
+}
+/* line 21, ../scss/layout/_nav.scss */
+#head .navbar-header a:hover {
+  text-decoration: none;
+  transition: 1s;
+  color: #005fb2;
+}
+/* line 27, ../scss/layout/_nav.scss */
+#head .navbar-header a {
+  font-family: 'Lato';
+  font-weight: 750;
+  font-size: 2em;
+  color: #FFDF00;
+}
+/* line 35, ../scss/layout/_nav.scss */
+#head .navbar-collapse {
+  height: 100vh;
+  max-height: none;
+  transition: 1s;
+}
+/* line 39, ../scss/layout/_nav.scss */
+#head .navbar-collapse .nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+/* line 44, ../scss/layout/_nav.scss */
+#head .navbar-collapse .nav .scroll {
+  padding-top: 80px;
+}
+/* line 47, ../scss/layout/_nav.scss */
+#head .navbar-collapse .nav .active {
+  color: #00bbfa;
+  border-bottom: 5px solid;
+}
+/* line 52, ../scss/layout/_nav.scss */
+#head .navbar-collapse .shrink {
+  background-color: #f4f4f4;
+}
+/* line 55, ../scss/layout/_nav.scss */
+#head .navbar-collapse .shrink a {
+  color: white;
+}
+/* line 60, ../scss/layout/_nav.scss */
+#head .navbar-collapse a {
+  font-family: "Wire One";
+  font-weight: 750;
+  font-size: 3em;
+  padding-right: 25px!important;
+  padding-top: 50px;
+  color: white;
+  letter-spacing: 4px;
+}
+/* line 70, ../scss/layout/_nav.scss */
+#head .navbar-collapse a:hover {
+  color: #00bbfa;
+  transition: .75s;
+}
+/* line 75, ../scss/layout/_nav.scss */
+#head .navbar-collapse #navLogo {
+  padding: 0!important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 83, ../scss/layout/_nav.scss */
+  #head {
+    background-color: white;
+    padding: 0px 0 0 0;
+  }
+  /* line 88, ../scss/layout/_nav.scss */
+  #head .container .page-scroll h1 {
+    padding-left: 8px;
+    display: inline;
+    color: #00bbfa;
+    font-family: "Wire One";
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-size: 3em;
+    display: inline!important;
+  }
+  /* line 100, ../scss/layout/_nav.scss */
+  #head .navbar-collapse {
+    background-color: #00bbfa;
+  }
+  /* line 102, ../scss/layout/_nav.scss */
+  #head .navbar-collapse .navbar-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    padding: 0!important;
+    margin: 0;
+  }
+  /* line 110, ../scss/layout/_nav.scss */
+  #head .navbar-collapse .navbar-nav .scoll {
+    padding: 0!important;
+  }
+  /* line 113, ../scss/layout/_nav.scss */
+  #head .navbar-collapse .navbar-nav li {
+    margin: auto;
+    padding: 35px 0 0 35px!important;
+  }
+  /* line 114, ../scss/layout/_nav.scss */
+  #head .navbar-collapse .navbar-nav li .active {
+    color: black!important;
+    border-bottom: none;
+  }
+  /* line 121, ../scss/layout/_nav.scss */
+  #head .navbar-collapse .navbar-nav li a {
+    margin: auto!important;
+    padding: auto!important;
+    height: 0;
+    color: white;
+    font-size: 2.5em;
+    font-family: "Unica One";
+  }
+  /* line 130, ../scss/layout/_nav.scss */
+  #head .navbar-collapse .navbar-nav #navLogo {
+    display: none;
+  }
+}
+/* line 4, ../scss/modules/_buttons.scss */
+#abtBtn .btn {
+  margin: 50px;
+  background-color: #00bbfa !important;
+  border-color: #00bbfa;
+  padding: 15px 45px 15px 45px;
+}
+/* line 9, ../scss/modules/_buttons.scss */
+#abtBtn .btn a {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-family: "Wire One";
+  text-decoration: none;
+}
+/* line 19, ../scss/modules/_buttons.scss */
+#abtBtn .btn:hover {
+  background-color: white;
+}
+/* line 22, ../scss/modules/_buttons.scss */
+#abtBtn .btn:hover a {
+  color: black;
+  text-decoration: none;
+}
+/* line 28, ../scss/modules/_buttons.scss */
+#abtBtn .btn:visited {
+  border-color: white;
+}
+
+/* line 35, ../scss/modules/_buttons.scss */
+#typeBtn button {
+  margin: 50px;
+  background-color: #00bbfa;
+  border-color: #00bbfa;
+  padding: 15px 45px 15px 45px;
+}
+/* line 40, ../scss/modules/_buttons.scss */
+#typeBtn button a {
+  color: black;
+  font-size: 2em;
+  font-weight: 800;
+  font-family: 'lato';
+  text-decoration: none;
+}
+/* line 49, ../scss/modules/_buttons.scss */
+#typeBtn .btn:hover {
+  background-color: #00bbfa;
+}
+/* line 52, ../scss/modules/_buttons.scss */
+#typeBtn .btn:hover a {
+  color: black;
+  text-decoration: none;
+}
+/* line 58, ../scss/modules/_buttons.scss */
+#typeBtn .btn:visited {
+  border-color: white;
+}
+
+/* line 65, ../scss/modules/_buttons.scss */
+#referralBtn button {
+  margin: 50px;
+  background-color: #00bbfa;
+  border-color: #00bbfa;
+  padding: 15px 45px 15px 45px;
+}
+/* line 70, ../scss/modules/_buttons.scss */
+#referralBtn button a {
+  color: black;
+  font-size: 2em;
+  font-weight: 800;
+  font-family: 'lato';
+  text-decoration: none;
+}
+/* line 79, ../scss/modules/_buttons.scss */
+#referralBtn .btn:hover {
+  background-color: #00bbfa;
+}
+/* line 82, ../scss/modules/_buttons.scss */
+#referralBtn .btn:hover a {
+  color: black;
+  text-decoration: none;
+}
+/* line 88, ../scss/modules/_buttons.scss */
+#referralBtn .btn:visited {
+  border-color: white;
+}
+
+/* line 2, ../scss/modules/_components.scss */
+#formTitle {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+/* line 5, ../scss/modules/_components.scss */
+#formTitle h2 {
+  color: white;
+  font-weight: 800;
+  font-family: 'lato';
+  font-size: 3em;
+}
+
+/* line 15, ../scss/modules/_components.scss */
+#form {
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+/* line 22, ../scss/modules/_components.scss */
+#form form {
+  padding: 15px 0 15px 0;
+  width: 75%;
+}
